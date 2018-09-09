@@ -9,6 +9,7 @@ const path = require("path");
 const fs = require("fs");
 
 const DIR = process.argv[2] || process.cwd();
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -28,4 +29,5 @@ app.put("/:file", bodyParser.raw(), (req, res) => {
   res.send();
 });
 
-app.listen(8080);
+app.listen(PORT);
+console.log("Serving " + DIR + " on port " + PORT);
