@@ -1,14 +1,10 @@
 {
-  "name": "cors-webdav-server",
+  "name": "webdav-server-fake",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "A fake WebDAV server to read/write local files",
+  "bin": "index.js",
+  "author": "Joan Rieu <joan@joanrieu.com>",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
